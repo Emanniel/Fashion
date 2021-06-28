@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lab 9 : Product Page</title>
+<link rel="stylesheet" type="text/css" href="structure.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="bekasbesar">
+	<div id="kotak1">
+		<div id="logo" style="width:40%; float:left;">
+			<img src="images/LOGO.png" style="width:40%; height:auto;">
+		</div>
+        
+		<div id="menu" style="width:60%; float:left;">
+			<p id="text1" style="margin-top:17%;">
+				<a href="index.html">Main</a> | 
+                <a href="videopage.html">Video</a> | 
+                Gallery |  
+				<a href="aboutuspage.html">About Us</a> |
+                <a href="contactpage.html">Find us?</a>			</p>
+	  </div>
+	</div>
+
+	<div id="kotak2">
+		<div class="slideshow-container">
+
+        
+
+
+
+
+        </div>
+        <br>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+</div>
+
+
+	<div id="kotak3_product">
+        <img src="images/Banner.png" id = "gambar" >
+		
+		<h1 style="text-align: center;">Gallery Photographs</h1>
+		
+        <hr style="border-top: dotted 1px; color:#999; width:100%;">
+		
+        <div id="kotak4-A"style="width:49%; float:left;">
+            <img src="images/Street Wear.jpeg" id = "gambar">
+            <p style="text-align: center;"><a href="gallerypage.html">Street Wear</a></p>
+            <p style="color:cyan;"> Streetwear involves the production, promotion, sale and resale of casual fashion, principally of footwear, such as sneakers, but also T-shirts and other items – in ways that bypass traditional retail channels, often subverting the way the fashion industry has long defined and dictated how “cool” is made .	
+            </p>
+    	</div>
+
+		<div id="kotak4-B" style="width:49%; float:right;">
+            <img src="images/Vintage.jpeg"  id = "gambar">
+            <p style="text-align: center;"><a href="gallerypage.html">Vintage</a></p>
+            <p style="color:cyan;">Vintage is a colloquialism commonly used to refer to all old styles of clothing. A generally accepted industry standard is that items made between 20 years ago and 100 years ago are considered "vintage" if they clearly reflect the styles and trends of the era they represent.</p>
+		</div>
+
+	<hr style="border-top: dotted 1px; color:#999; float:left; width:100%;">
+
+        <div id="kotak4-C" style="width:49%; float:left;">
+            <img src="images/Kawaii.jpeg" id = "gambar">
+            <p style="text-align: center;"><a href="gallerypage.html">Kawaii</a></p>
+            <p style="color:cyan;">Kawaii is the culture of cuteness in Japan.The cuteness culture, or kawaii aesthetic, has become a prominent aspect of Japanese popular culture, entertainment, clothing, food, toys, personal appearance, and mannerisms.</p>
+        </div>
+
+        <div id="kotak4-D" style="width:49%; float:right;">
+            <img src="images/KPOP.png"  width="100%" height="500%">
+            <p style="text-align: center;"><a href="gallerypage.html">Kpop</a></p>
+            <p style="color:cyan;"> Kpop is an abbreviation for Korean popular music and it's a music genre that originated in South Korea during the late 1800s. Kpop music is usually a treat for both the eyes and ears, simply because of the fashionable clothing and not to mention the visual effects. </p>
+       
+         </div>
+		
+		<hr style="border-top: dotted 1px; color:#999; float:left; width:100%;">
+		
+			<div id="kotak4-C" style="width:49%; float:left;">
+            <img src="images/Sporty.jpeg" id = "gambar">
+            <p style="text-align: center;"><a href="gallerypage.html">Sporty</a></p>
+            <p style="color:cyan;">Sporty clothes are bright and informal, and look like the type of clothes that you could wear for sports.</p>
+        </div>
+
+        <div id="kotak4-D" style="width:49%; float:right;">
+            <img src="images/Punk Rock.jpeg"  width="100%" height="500%">
+            <p style="text-align: center;"><a href="gallerypage.html">Punk Rock</a></p>
+            <p style="color: cyan;">Punk fashion is the clothing, hairstyles, cosmetics, jewellery, and body modifications of the punk subculture. Punk fashion varies widely, ranging from Vivienne Westwood designs to styles modeled on bands like The Exploited to the dressed-down look of North American hardcore. </p>
+       
+
+        </div>
+    
+  </div>
+  
+  <div id="kotak4_product">
+  
+  
+  </div>
+
+	
+</div>
+</body>
+</html>
