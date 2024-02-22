@@ -1,9 +1,51 @@
-<mxfile host="app.diagrams.net" modified="2024-02-22T15:04:00.954Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" version="23.1.5" etag="r4CKCIwmIfydUZUBxnuy" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-22T15:39:37.565Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="DTrGSrBGWhNlklReD-Fs" version="23.1.5" type="github">
   <diagram name="Page-1" id="K4JuQ-M7HYoKW3nWOznF">
-    <mxGraphModel>
+    <mxGraphModel dx="1900" dy="1622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-5" value="Employers" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="200" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-6" value="EmployerID (Primary Key)&lt;br&gt;EmployerName&lt;br&gt;Position&lt;br&gt;Skill&lt;br&gt;Year-Service" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="dowY4RJ52TbpLB8X9Tp1-5">
+          <mxGeometry y="50" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-7" value="Customers" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="-40" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-8" value="CustomerID (Primary Key)&lt;br&gt;CustomerName&lt;br&gt;Contact-No&lt;br&gt;Address&lt;br&gt;Company" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="dowY4RJ52TbpLB8X9Tp1-7">
+          <mxGeometry y="50" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-9" value="Project" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-10" value="ProjectCode (Primary Key)&lt;br&gt;Title&lt;br&gt;Duration&lt;br&gt;BudgetDetails" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="dowY4RJ52TbpLB8X9Tp1-9">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-11" value="Equipment" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="200" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-12" value="Equipt-No (Primary Key)&lt;br&gt;Description&lt;br&gt;Year-Manufacture" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="dowY4RJ52TbpLB8X9Tp1-11">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-18" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="dowY4RJ52TbpLB8X9Tp1-8" target="dowY4RJ52TbpLB8X9Tp1-9">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="150" as="sourcePoint" />
+            <mxPoint x="470" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-19" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;entryX=-0.005;entryY=0.103;entryDx=0;entryDy=0;exitX=1.005;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="dowY4RJ52TbpLB8X9Tp1-6" target="dowY4RJ52TbpLB8X9Tp1-10">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="220" y="230" as="sourcePoint" />
+            <mxPoint x="220" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dowY4RJ52TbpLB8X9Tp1-20" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="dowY4RJ52TbpLB8X9Tp1-10" target="dowY4RJ52TbpLB8X9Tp1-12">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="510" y="150" as="sourcePoint" />
+            <mxPoint x="510" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
